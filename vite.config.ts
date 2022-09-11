@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 
 import { defineConfig} from "vite";
 import vue from "@vitejs/plugin-vue";
@@ -36,7 +37,16 @@ export default defineConfig({
             fileName:"fu-ui",
             formats:["es","umd","iife"] // 导出模块格式
         }
-    }
+    },
+    // 测试
+    test:{
+        globals: true,
+        environment: 'happy-dom',
+        // 支持tsx组件，很关键
+        transformMode: {
+        web: [/.[tj]sx$/]
+        }
+    },
 })
 
 

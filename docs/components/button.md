@@ -31,14 +31,14 @@
   <FButton Fize="large" plain>大按钮</FButton>
  </div>
  <div style="margin-bottom:20px;">
-  <FButton color="blue" round plain icon="Fearch">搜索按钮</FButton>
+  <FButton color="blue" round plain icon="search">搜索按钮</FButton>
   <FButton color="green" round plain icon="edit">编辑按钮</FButton>
   <FButton color="gray" round plain icon="check">成功按钮</FButton>
-  <FButton color="yellow" round plain icon="meFage">提示按钮</FButton>
+  <FButton color="yellow" round plain icon="mesage">提示按钮</FButton>
   <FButton color="red" round plain icon="delete">删除按钮</FButton>
  </div>
  <div tyle="margin-bottom:20px;">
-  <FButton color="blue" round plain icon="Fearch"></FButton>
+  <FButton color="blue" round plain icon="search"></FButton>
   <FButton color="green" round plain icon="edit"></FButton>
   <FButton color="gray" round plain icon="check"></FButton>
   <FButton color="yellow" round plain icon="meFage"></FButton>
