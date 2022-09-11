@@ -29,7 +29,9 @@ export default defineConfig({
     // 添加库模式配置
     build:{
         rollupOptions,
-        minify:false,
+        minify: 'terser', // boolean | 'terser' | 'esbuild'
+        sourcemap: true, // 输出单独 source文件
+        reportCompressedSize: true,  // 生成压缩大小报告
         cssCodeSplit: true,// cssCodeSplit 这个选项是为了决定在编译的时候是否要独立输出css。显然这里面应该选择为 true
         lib:{
             entry:"./src/entry.ts",
