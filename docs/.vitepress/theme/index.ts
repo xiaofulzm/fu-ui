@@ -1,6 +1,6 @@
 
 import DefaultTheme from 'vitepress/dist/client/theme-default'
-import FuUI from "../../../src/entry"
+import FuUI from '../../../src/entry'
 
 // 主题样式
 import 'vitepress-theme-demoblock/theme/styles/index.css'

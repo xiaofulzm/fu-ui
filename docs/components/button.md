@@ -57,10 +57,10 @@
 ```vue
 <template>
  <div class="flex flex-row">
-  <FButton icon="edit" plain></SButton>
-  <FButton icon="delete" plain></SButton>
-  <FButton icon="share" plain></SButton>
-  <FButton round plain icon="search">搜索</SButton>
+  <FButton icon="edit" plain></FButton>
+  <FButton icon="delete" plain></FButton>
+  <FButton icon="share" plain></FButton>
+  <FButton round plain icon="search">搜索</FButton>
  </div>
 </template>
 ```

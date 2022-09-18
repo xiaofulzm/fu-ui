@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/assets/entry.css" />
+    <script src="../../node_modules/vue/dist/vue.global.js"></script>
+    <script src="../../dist/Button/index.iife.js"></script>
     <title>Document</title>
 </head>
 <body>
     <h1>demo  测试</h1>
     <div id="app" ></div>
     <script type="module" >
-        import { createApp } from "vue/dist/vue.esm-bundler.js";
-        import FuUI from '../../dist/fu-ui.mjs';
-
+        const { createApp } = Vue
+        console.log(Button)
         createApp({
             template: `
             <FButton color="blue" icon="search" >按钮</FButton>
-            <FIcon icon="check" />
-        `}).use(FuUI).mount('#app')
+        `}).use(Button.default).mount('#app')
     </script>
 </body>
 </html>

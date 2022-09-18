@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 
-import { defineConfig} from "vite";
+import { defineConfig,Plugin,UserConfig} from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJSX from "@vitejs/plugin-vue-jsx";
 
@@ -18,13 +18,13 @@ const rollupOptions= {
     }
 }
 
-export default defineConfig({
+export const config = {
     plugins:[
-        vue(),
+        vue() as  Plugin,
         //添加jsx插件
-        vueJSX({}),
+        vueJSX({}) as Plugin,
         // 添加Unocss插件
-        Unocss()
+        Unocss() as Plugin[]
     ],
     // 添加库模式配置
     build:{
@@ -38,7 +38,8 @@ export default defineConfig({
             name:"FuUI",
             fileName:"fu-ui",
             formats:["es","umd","iife"] // 导出模块格式
-        }
+        },
+        outDir: "./dist",
     },
     // 测试
     test:{
@@ -49,6 +50,9 @@ export default defineConfig({
         web: [/.[tj]sx$/]
         }
     },
-})
+}
+
+
+export default defineConfig(config as UserConfig);
 
 
